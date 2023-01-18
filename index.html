@@ -10,15 +10,18 @@
 <body>
     
     <div class="container">
-        <h2>Sign Up</h2>
-        <form>
+        <h1>Sign Up</h1>
+        <form name="myForm" action="" onsubmit="return validateForm()" method="post">
             <input type="text" name="username" placeholder="Enter your name" id="username"/><br>
-            <input type="email" name="email" placeholder="Enter your name" id="email"/><br>
-            <input type="password" name="password" placeholder="Enter your name" id="password"/><br>
-            <input type="password" name="cofirmpassword" placeholder="Enter your name" id="confirmPassword"/><br>
+            <div id="nameError" class="error"></div>
+            <input type="email" name="email" placeholder="Enter your email" id="email"/><br>
+            <div id="emailError" class="error"></div>
+            <input type="password" name="password" placeholder="Enter your password" id="password"/><br>
+            <div id="passwordError" class="error"></div>
+            <input type="password" name="cofirmpassword" placeholder="Re-enter your password" id="confirmPassword"/><br>
+            <div id="cofirmPasswordError" class="error"></div>
             <button type="submit">Submit</button>
-        </form>
-        
+        </form>   
     </div>
     
 
